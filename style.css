@@ -1,0 +1,18 @@
+:root { --bg: #f3f7f8; --fg: #142c37; --muted: #4c626b; --brand: #006b58; --card: #ffffff; --line: #d5e1e4; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #081a22; --fg: #e1edf0; --muted: #b7cbd1; --brand: #82dfc3; --card: #112a35; --line: #35515d; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.75 "Tajawal", "Segoe UI", system-ui, sans-serif; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+.brand { font-weight: 800; font-size: 20px; margin: 0 0 24px; }
+.brand a { color: var(--brand); text-decoration: none; }
+h1 { font-size: 30px; line-height: 1.35; margin: 0 0 12px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+.meta { color: var(--muted); font-size: 15px; }
+a { color: var(--brand); }
+code { background: var(--card); border: 1px solid var(--line); border-radius: 6px; padding: 1px 6px; font-size: 15px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+ul, ol { padding-inline-start: 22px; }
+.links { list-style: none; padding: 0; display: grid; gap: 10px; margin: 24px 0; }
+.links a { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 18px; text-decoration: none; font-weight: 700; }
