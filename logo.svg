@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 108" role="img" aria-label="Sabbaq">
+<rect width="108" height="108" rx="24" fill="#341862"/>
+<path d="M56.6,83.9 A30,30 0,1 1,83,61.8" fill="none" stroke="#FFD21F" stroke-width="4" stroke-linecap="round"/>
+<path d="M52.4,67.5 L61.4,78.2" fill="none" stroke="#FFD21F" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.55"/>
+<path d="M56.7,58.6 L70.9,75.5" fill="none" stroke="#FFD21F" stroke-width="3.6" stroke-linecap="round"/>
+<path d="M66.2,55.9 L75.2,66.6" fill="none" stroke="#FFD21F" stroke-width="3.2" stroke-linecap="round" stroke-opacity="0.55"/>
+<path d="M31,28 L71.5,51.4 L49,49.4 L47,72 Z" fill="#F5FAFF"/>
+<path d="M31,28 L49,49.4 L47,72 Z" fill="#FFD21F"/>
+</svg>
