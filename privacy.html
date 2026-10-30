@@ -10,7 +10,7 @@
 <main>
 <p class="brand"><a href="./">سبّاق | Sabbaq</a></p>
 <h1>سياسة خصوصية تطبيق سبّاق</h1>
-<p class="meta">تاريخ السريان: 2026-10-29 · المسؤول عن البيانات: Mohamed Hassan Omar · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
+<p class="meta">تاريخ السريان: 2026-10-30 · المسؤول عن البيانات: Mohamed Hassan Omar · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
 
 <p>تشرح هذه السياسة كيف يعالج تطبيق «سبّاق» لنظام Android (الحزمة <code>app.sabbaq.driver</code>) بيانات مستخدميه، ولماذا، وإلى متى. لا تنطبق على سياسات خصوصية تطبيقات الرحلات (مثل جيني وبولت وبترا) التي يقرأ سبّاق شاشاتها بإذنك.</p>
 
@@ -54,6 +54,10 @@
 <li>لـ OpenStreetMap (Nominatim) أو لخدمة العناوين في Android: نص العنوان ونطاق تقريبي.</li>
 </ul></li>
 <li><strong>Google:</strong> قد يستعلم خادمنا من Google عن العنوان. تُحفظ النتيجة (نص العنوان وإحداثياته) في ذاكرة مشتركة لا ترتبط بأي حساب، حتى لا يتكرر البحث.</li>
+<li><strong>تجهيز أسماء المنطقة قبل تفعيلها:</strong> يرسل جهازك زوايا المنطقة التي رسمتها إلى خوادم OpenStreetMap (Overpass)، وقد يرسل نقاطًا داخلها إلى Nominatim، ليجلب أسماء شوارعها ومعالمها ويحفظها على جهازك.</li>
+<li><strong>الطريق إلى منطقة الوجهة:</strong> إذا فعّلت خيار «على الطريق»، يرسل جهازك، كلما تحركت نحو 2 كم أو غيّرت مناطقك، مربعات صغيرة (3 كم افتراضيًا، بحسب عرض الممر الذي تختاره) على الخط بينك وبين المنطقة إلى OpenStreetMap (Overpass)، ليجلب أسماء الشوارع التي عليه. لا يُرسل موقعك نفسه، لكن هذه المربعات تدل على مسارك التقريبي.</li>
+<li><strong>Google Places (إن شغّلته الإدارة):</strong> يرسل جهازك نقاطًا داخل منطقتك إلى خادمنا، فيسأل خادمنا Google عن أسماء الأماكن حولها. تُحفظ النتيجة 30 يومًا في ذاكرة مشتركة لا ترتبط بأي حساب.</li>
+<li><strong>مناطق الإدارة:</strong> يحمّل التطبيق مناطق الاستثناء الافتراضية لدولتك وحدّ المناطق، وتُعرف دولتك من رمز رقم جوالك المسجّل لدينا أصلًا.</li>
 </ul>
 
 <h2>صحة الجهاز والإصدارات والأعطال</h2>
@@ -91,7 +95,7 @@
 <li><strong>Supabase:</strong> استضافة الحسابات وقاعدة البيانات والمصادقة.</li>
 <li><strong>Google:</strong> عند اختيارك تسجيل الدخول بحساب Google، ولتحديد مواقع العناوين عبر خادمنا.</li>
 <li><strong>Twilio:</strong> إرسال رمز التحقق إلى جوالك عند اختيارك الدخول برقم الجوال.</li>
-<li><strong>OpenStreetMap (Nominatim):</strong> البحث عن العناوين من جهازك عند تفعيلك ميزة المناطق.</li>
+<li><strong>OpenStreetMap (Nominatim وخوادم Overpass):</strong> البحث عن العناوين وأسماء شوارع المناطق والطريق إليها من جهازك عند تفعيلك ميزة المناطق.</li>
 </ul>
 <p>لا يحتوي التطبيق على إعلانات ولا أدوات تحليلات أو تتبع من أطراف ثالثة، ولا نبيع البيانات. يصل إلى بيانات السائقين مسؤولو سبّاق المخوّلون فقط، لإدارة الحسابات والدعم والأمان. تنتقل البيانات عبر اتصال مشفّر (HTTPS) فقط، ولا يصل أي مستخدم إلى جداول قاعدة البيانات مباشرة.</p>
 
@@ -100,7 +104,7 @@
 <li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب.</li>
 <li><strong>أحداث التشخيص وصحة الجهاز:</strong> 30 يومًا، ثم تُحذف تلقائيًا.</li>
 <li><strong>هياكل الشاشات بعد حذف بياناتها الشخصية:</strong> 30 يومًا، ثم تُحذف تلقائيًا، إلا ما اعتُمد منها لتحسين المحرك (ولا يحمل أي بيانات شخصية).</li>
-<li><strong>ذاكرة العناوين المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا.</li>
+<li><strong>ذاكرة العناوين والأماكن المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا (أماكن Google بعد 30 يومًا).</li>
 <li><strong>سجل التدقيق الأمني:</strong> يُجرَّد من هوية حسابك عند الحذف، ويُحتفظ به 12 شهرًا ثم يُحذف.</li>
 <li><strong>بصمات منع تكرار التجربة المجانية:</strong> إذا استخدمت التجربة قبل الحذف، نحتفظ ببصمات تشفير أحادية الاتجاه (SHA-256) لرقم جوالك أو بريد Google ومعرّف جهازك فقط، طوال تشغيل الخدمة. لا تتيح هذه البصمات استرجاع البيانات الأصلية.</li>
 <li><strong>النسخ الاحتياطية:</strong> تُستبدل لدى مزود الاستضافة دوريًا خلال 7 أيام.</li>
@@ -118,7 +122,7 @@
 <hr>
 <h2 lang="en" dir="ltr">Privacy Policy (English)</h2>
 <div lang="en" dir="ltr">
-<p>Effective 2026-10-29. Controller: Mohamed Hassan Omar, <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
+<p>Effective 2026-10-30. Controller: Mohamed Hassan Omar, <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
 <p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. Your conditions and preferences stay on the device.</p>
 <p><strong>Screen reading (Accessibility service):</strong> Sabbaq reads only the window of the ride app you chose. On your device it extracts the fare, time, distance and destination, applies your conditions, and taps accept when they are met. Screen content is not uploaded, with two exceptions:</p>
 <ul>
@@ -139,16 +143,20 @@
 <li>The exact position stays on the device.</li>
 <li>Address lookups send the address text with a coarse position (about 50 km) to our server, or a coarse area to OpenStreetMap Nominatim or Android's geocoder.</li>
 <li>Our server may query Google; results go to a shared cache not linked to any account.</li>
+<li>Before a zone is switched on, its corners go to OpenStreetMap (Overpass), and points inside it may go to Nominatim, to fetch its street and place names onto the device.</li>
+<li>With «on the way» on, each time you move about 2 km or change zones, small squares (3 km by default, set by your corridor width) along the line from you to the zone go to OpenStreetMap (Overpass). Your position itself is not sent, but the squares reveal your approximate route.</li>
+<li>If the administration turns on Google Places, points inside your zone go to our server, which asks Google for nearby place names; results stay 30 days in a shared cache not linked to any account.</li>
+<li>The app downloads your country's default exclude zones and zone limit; the country comes from your registered phone number's prefix.</li>
 </ul>
 <p><strong>Device health and crashes:</strong> the phone maker, Android version, memory size, battery and standby restrictions, when and why Android ended the app, update state, and the crash type and location in Sabbaq's code (no text or personal data). The detailed crash report stays on the device unless you share it.</p>
 <p><strong>Referrals:</strong> the owner of the invite code you used sees your name, phone number and subscription state. Device and phone number are recorded against reward fraud.</p>
 <p><strong>Updates and floating button:</strong> the direct build downloads updates from our server and verifies their hash and signature; Android installs them only with your approval. The floating button starts, stops and opens Sabbaq; it reads and sends nothing.</p>
-<p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server), Twilio (SMS codes), OpenStreetMap Nominatim (address lookup). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
+<p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server), Twilio (SMS codes), OpenStreetMap Nominatim and Overpass (address, zone and route names). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
 <p><strong>Retention:</strong></p>
 <ul>
 <li>Account data: until you delete the account.</li>
 <li>Diagnostics and screen structures: 30 days (structures adopted for the engine contain no personal data).</li>
-<li>Shared address cache: not linked to accounts.</li>
+<li>Shared address and place cache: not linked to accounts (Google places 30 days).</li>
 <li>Audit log: de-identified, 12 months.</li>
 <li>One-way trial fingerprints: while the service runs.</li>
 <li>Backups: 7 days.</li>
