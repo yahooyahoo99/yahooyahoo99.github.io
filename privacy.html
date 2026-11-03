@@ -21,6 +21,7 @@
 <li><strong>بيانات الحساب:</strong> عند الدخول بحساب Google: البريد الإلكتروني والاسم ومعرّف حساب Google. عند الدخول برقم الجوال: رقم الجوال السعودي الذي تتحقق منه برمز لمرة واحدة.</li>
 <li><strong>معرّف الجهاز:</strong> معرّف Android الخاص بالتطبيق (ANDROID_ID)، لربط الاشتراك بجهاز واحد ومنع تكرار التجربة المجانية.</li>
 <li><strong>حالة الاشتراك:</strong> حالة التجربة أو الاشتراك وتواريخ بدئه وانتهائه، ورقم إصدار التطبيق، وأكواد التفعيل التي تستخدمها.</li>
+<li><strong>طلبات الدفع بالتحويل:</strong> إن اشتركت بتحويل بنكي نحفظ الخطة التي اخترتها ومبلغها ورقم مرجع التحويل الذي ترسله، وصورة الإيصال إن أرفقتها. تُختار الصورة بأداة اختيار الصور في Android دون منح التطبيق إذنًا لصورك، وتُحفظ في مساحة خاصة لا يصل إليها إلا أنت والإدارة المخوّلة لمراجعة الحوالة. لا نطلب بيانات بطاقتك أو حسابك البنكي، فالتحويل يتم من تطبيق بنكك. وإن ضغطت «تفعيل عبر واتساب» يُفتح واتساب برسالة فيها رقمك المسجّل، ولا تُرسل إلا إذا أرسلتها أنت.</li>
 <li><strong>شروطك وتفضيلاتك:</strong> شروط الطلبات (الأجرة والوقت والمسافة والكلمات والمناطق) ومظهر التطبيق، وتُحفظ على جهازك. يُرسل إلى خادمنا فقط أيّ الشروط مفعّل (نعم أو لا لكل شرط)، دون قيمها، كل 6 ساعات وعند الحفظ، لتشخيص سبب عدم القبول دون الرجوع إليك.</li>
 </ul>
 
@@ -118,7 +119,7 @@
 
 <h2>مدة الاحتفاظ</h2>
 <ul>
-<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل ورمز الإشعار:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب. وسجل الإشعارات الفورية المرسلة يُحذف بعد 7 أيام.</li>
+<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل ورمز الإشعار وطلبات الدفع وصور الإيصالات:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب. وسجل الإشعارات الفورية المرسلة يُحذف بعد 7 أيام.</li>
 <li><strong>أحداث التشخيص وصحة الجهاز:</strong> 30 يومًا، ثم تُحذف تلقائيًا.</li>
 <li><strong>هياكل الشاشات بعد حذف بياناتها الشخصية:</strong> 30 يومًا، ثم تُحذف تلقائيًا، إلا ما اعتُمد منها لتحسين المحرك (ولا يحمل أي بيانات شخصية).</li>
 <li><strong>ذاكرة العناوين والأماكن المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا (أماكن Google بعد 30 يومًا).</li>
@@ -140,7 +141,7 @@
 <h2 lang="en" dir="ltr">Privacy Policy (English)</h2>
 <div lang="en" dir="ltr">
 <p>Effective 2026-11-03. Controller: Sabbaq management (إدارة سبّاق), <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
-<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. Your conditions and preferences stay on the device; only which conditions are on (yes or no each, never their values) is sent every 6 hours and on save, to diagnose missed offers without asking you.</p>
+<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. If you subscribe by bank transfer: the plan, its amount, the transfer reference you send and, if you attach it, a photo of the receipt, picked with Android's photo picker (no access to your photos) and kept in private storage that only you and the authorised administration can open; we never ask for card or bank account details, the transfer is made in your bank's app. «Activate via WhatsApp» opens WhatsApp with a message carrying your registered number, sent only if you send it. Your conditions and preferences stay on the device; only which conditions are on (yes or no each, never their values) is sent every 6 hours and on save, to diagnose missed offers without asking you.</p>
 <p><strong>Screen reading (Accessibility service):</strong> Sabbaq reads only the window of the ride app you chose. On your device it extracts the fare, time, distance and destination, applies your conditions, and taps accept when they are met. Screen content is not uploaded, except:</p>
 <ul>
 <li>Short diagnostic events (where each offer stopped and why, with counters and technical codes; for a fare or time rejection, which side of your limit and a rough band of the distance to it, never the fare or the limit; no addresses, names, fares or phone numbers).</li>
@@ -176,7 +177,7 @@
 <p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server, Firebase Cloud Messaging for content-free wake-ups), Twilio (SMS codes), OpenStreetMap Nominatim and Overpass (address, zone, route and city names), Photon by komoot (place search and address lookup). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
 <p><strong>Retention:</strong></p>
 <ul>
-<li>Account data and the notification token: until you delete the account; the log of sent wake-ups, 7 days.</li>
+<li>Account data, the notification token, payment requests and receipt photos: until you delete the account; the log of sent wake-ups, 7 days.</li>
 <li>Diagnostics and screen structures: 30 days (structures adopted for the engine contain no personal data).</li>
 <li>Shared address and place cache: not linked to accounts (Google places 30 days).</li>
 <li>Audit log: de-identified, 12 months.</li>
