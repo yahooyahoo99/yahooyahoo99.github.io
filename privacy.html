@@ -12,7 +12,7 @@
 <main>
 <header class="hero"><a class="hero-brand" href="./"><img src="logo.svg" alt="" width="52" height="52"><span><strong>سبّاق</strong><small>أول من يلتقط الطلب المناسب · Sabbaq</small></span></a></header>
 <h1>سياسة خصوصية تطبيق سبّاق</h1>
-<p class="meta">تاريخ السريان: 2026-10-31 · المسؤول عن البيانات: إدارة سبّاق · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
+<p class="meta">تاريخ السريان: 2026-11-03 · المسؤول عن البيانات: إدارة سبّاق · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
 
 <p>تشرح هذه السياسة كيف يعالج تطبيق «سبّاق» لنظام Android (الحزمة <code>app.sabbaq.driver</code>) بيانات مستخدميه، ولماذا، وإلى متى. لا تنطبق على سياسات خصوصية تطبيقات الرحلات (مثل جيني وبولت وبترا) التي يقرأ سبّاق شاشاتها بإذنك.</p>
 
@@ -21,16 +21,22 @@
 <li><strong>بيانات الحساب:</strong> عند الدخول بحساب Google: البريد الإلكتروني والاسم ومعرّف حساب Google. عند الدخول برقم الجوال: رقم الجوال السعودي الذي تتحقق منه برمز لمرة واحدة.</li>
 <li><strong>معرّف الجهاز:</strong> معرّف Android الخاص بالتطبيق (ANDROID_ID)، لربط الاشتراك بجهاز واحد ومنع تكرار التجربة المجانية.</li>
 <li><strong>حالة الاشتراك:</strong> حالة التجربة أو الاشتراك وتواريخ بدئه وانتهائه، ورقم إصدار التطبيق، وأكواد التفعيل التي تستخدمها.</li>
-<li><strong>شروطك وتفضيلاتك:</strong> شروط الطلبات (الأجرة والوقت والمسافة والكلمات والمناطق) ومظهر التطبيق، وتُحفظ على جهازك.</li>
+<li><strong>شروطك وتفضيلاتك:</strong> شروط الطلبات (الأجرة والوقت والمسافة والكلمات والمناطق) ومظهر التطبيق، وتُحفظ على جهازك. يُرسل إلى خادمنا فقط أيّ الشروط مفعّل (نعم أو لا لكل شرط)، دون قيمها، كل 6 ساعات وعند الحفظ، لتشخيص سبب عدم القبول دون الرجوع إليك.</li>
 </ul>
 
 <h2>قراءة شاشة تطبيق الرحلات (خدمة إمكانية الوصول)</h2>
 <p>عندما تفعّل خدمة «إمكانية الوصول» لسبّاق، يقرأ التطبيق نافذة تطبيق الرحلات الذي اخترته فقط: النصوص ووصف العناصر ومعرّفاتها ونوعها وقابليتها للضغط وموقعها على الشاشة.</p>
 <p><strong>على جهازك</strong> يستخرج سبّاق من الشاشة السعر والوقت والمسافة والوجهة، ويطبّق شروطك، ويضغط زر القبول عندما تتحقق الشروط.</p>
-<p><strong>لا يُرفع محتوى الشاشة إلى خوادمنا</strong> إلا في حالتين:</p>
+<p><strong>لا يُرفع محتوى الشاشة إلى خوادمنا</strong> إلا في الحالات الآتية:</p>
 <ul>
-<li><strong>أحداث تشخيص مختصرة:</strong> تبيّن أين توقف كل طلب ولماذا، مثل «لم يُقرأ الوقت» أو «رُفض بالسعر» أو «أُكّد القبول»، مع عدّادات ورموز تقنية قصيرة. لا تحتوي على عناوين أو أسماء أو أسعار أو أرقام جوال، ويرفض الخادم أي حدث يحتويها.</li>
-<li><strong>هيكل الشاشة بعد حذف بياناتها الشخصية:</strong> يُرسل فقط حين يظهر طلب لم يستطع سبّاق قراءته أو قبوله لسبب لا علاقة له بشروطك، ليتحسن المحرك عند كل السائقين.
+<li><strong>أحداث تشخيص مختصرة:</strong> تبيّن أين توقف كل طلب ولماذا، مثل «لم يُقرأ الوقت» أو «رُفض بالسعر» أو «أُكّد القبول»، مع عدّادات ورموز تقنية قصيرة. عند الرفض بالسعر أو الوقت تذكر جهة حدّك (أعلى أو أدنى) وفئة تقريبية لبُعد الطلب عنه، دون الأجرة أو حدّك نفسه. لا تحتوي على عناوين أو أسماء أو أسعار أو أرقام جوال، ويرفض الخادم أي حدث يحتويها.</li>
+<li><strong>هيكل الشاشة بعد حذف بياناتها الشخصية:</strong> يُرسل في ثلاث حالات، ليتحسن المحرك عند كل السائقين:
+<ul>
+<li>حين يظهر طلب لم يستطع سبّاق قراءته أو قبوله لسبب لا علاقة له بشروطك.</li>
+<li>حين تقبل بيدك طلبًا لم يقرأه سبّاق كاملًا، فيُرسل هيكل تلك الشاشة نفسها.</li>
+<li>طلب واحد مرفوض في اليوم لكل نوع رفض (بالسعر أو بالوقت)، ومعه الأجرة والوقت كما قرأهما سبّاق، لمقارنتهما بالشاشة والتأكد أن القراءة صحيحة.</li>
+</ul>
+<p>وفي كل الحالات:</p>
 <ul>
 <li>يحمل نوع كل عنصر وموقعه ومعرّفه.</li>
 <li>يبقى منه نصًا كما هو: الأرقام، والكلمات التي يعرفها المحرك (مثل «قبول» و«دقائق» و«ريال»)، وأسماء الأزرار القصيرة.</li>
@@ -41,6 +47,8 @@
 <li>الحد الأقصى 20 عيّنة يوميًا لكل جهاز.</li>
 </ul></li>
 </ul>
+
+<p><strong>الهواتف التي فيها صلاحية root:</strong> إن كان هاتفك مفتوح الصلاحيات (root)، يطلب سبّاق الصلاحية مرة واحدة، فيظهر لك طلب الإذن من مدير الصلاحيات. إن وافقت، يضغط زر القبول بلمسة تُكتب مباشرة في شاشة اللمس. لا يُرسل شيء من ذلك إلى خوادمنا، ويمكنك سحب الإذن في أي وقت.</p>
 
 <h2>تعلّم المحرك</h2>
 <p>تتعلم خوادمنا من هذه الهياكل الكلمات الجديدة التي تظهر على شاشات تطبيقات الرحلات، مثل صيغة جديدة للوقت أو اسم جديد لزر القبول. يشترط ذلك أن تظهر الكلمة لثلاثة سائقين على الأقل.</p>
@@ -86,6 +94,8 @@
 
 <h2>الرسائل والإشعارات</h2>
 <p>نحفظ رسائلك مع الدعم والإشعارات المرسلة إليك، لعرضها في التطبيق وللرد عليك.</p>
+<p><strong>الإشعار الفوري:</strong> يحصل التطبيق من خدمة Firebase Cloud Messaging من Google على رمز إشعار خاص بهاتفك، ويحفظه في خادمنا مرتبطًا بحسابك (5 هواتف على الأكثر). عند وصول رسالة من الإدارة أو تغيّر في اشتراكك، يرسل خادمنا عبر Google إشارة فارغة إلى هاتفك، لا تحمل أي نص أو بيانات عنك، فيجلب الهاتف الجديد من خادمنا مباشرة. يُحذف الرمز مع حذف حسابك، أو حين يرفضه Google بعد إزالة التطبيق.</p>
+<p><strong>التذكيرات:</strong> تذكيرات إكمال الإعداد وتشغيل سبّاق تُحسب على هاتفك من حالته، ولا تُرسل شيئًا.</p>
 
 <h2>لماذا نعالج البيانات</h2>
 <ul>
@@ -99,7 +109,7 @@
 <h2>مع من نشاركها</h2>
 <ul>
 <li><strong>Supabase:</strong> استضافة الحسابات وقاعدة البيانات والمصادقة.</li>
-<li><strong>Google:</strong> عند اختيارك تسجيل الدخول بحساب Google، ولتحديد مواقع العناوين عبر خادمنا.</li>
+<li><strong>Google:</strong> عند اختيارك تسجيل الدخول بحساب Google، ولتحديد مواقع العناوين عبر خادمنا، ولإيصال الإشعار الفوري (Firebase Cloud Messaging) دون أي محتوى.</li>
 <li><strong>Twilio:</strong> إرسال رمز التحقق إلى جوالك عند اختيارك الدخول برقم الجوال.</li>
 <li><strong>OpenStreetMap (Nominatim وخوادم Overpass):</strong> البحث عن العناوين وأسماء شوارع المناطق والطريق إليها وخريطة مدينتك من جهازك عند تفعيلك ميزة المناطق.</li>
 <li><strong>Photon (komoot):</strong> اقتراحات البحث عن الأماكن أثناء الكتابة، وتحديد مواقع العناوين حين لا يجدها غيرها.</li>
@@ -108,7 +118,7 @@
 
 <h2>مدة الاحتفاظ</h2>
 <ul>
-<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب.</li>
+<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل ورمز الإشعار:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب. وسجل الإشعارات الفورية المرسلة يُحذف بعد 7 أيام.</li>
 <li><strong>أحداث التشخيص وصحة الجهاز:</strong> 30 يومًا، ثم تُحذف تلقائيًا.</li>
 <li><strong>هياكل الشاشات بعد حذف بياناتها الشخصية:</strong> 30 يومًا، ثم تُحذف تلقائيًا، إلا ما اعتُمد منها لتحسين المحرك (ولا يحمل أي بيانات شخصية).</li>
 <li><strong>ذاكرة العناوين والأماكن المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا (أماكن Google بعد 30 يومًا).</li>
@@ -129,12 +139,12 @@
 <hr>
 <h2 lang="en" dir="ltr">Privacy Policy (English)</h2>
 <div lang="en" dir="ltr">
-<p>Effective 2026-10-31. Controller: Sabbaq management (إدارة سبّاق), <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
-<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. Your conditions and preferences stay on the device.</p>
-<p><strong>Screen reading (Accessibility service):</strong> Sabbaq reads only the window of the ride app you chose. On your device it extracts the fare, time, distance and destination, applies your conditions, and taps accept when they are met. Screen content is not uploaded, with two exceptions:</p>
+<p>Effective 2026-11-03. Controller: Sabbaq management (إدارة سبّاق), <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
+<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. Your conditions and preferences stay on the device; only which conditions are on (yes or no each, never their values) is sent every 6 hours and on save, to diagnose missed offers without asking you.</p>
+<p><strong>Screen reading (Accessibility service):</strong> Sabbaq reads only the window of the ride app you chose. On your device it extracts the fare, time, distance and destination, applies your conditions, and taps accept when they are met. Screen content is not uploaded, except:</p>
 <ul>
-<li>Short diagnostic events (where each offer stopped and why, with counters and technical codes; no addresses, names, fares or phone numbers).</li>
-<li>When an offer could not be read or accepted for a reason unrelated to your conditions, a structure of that screen with personal data removed:
+<li>Short diagnostic events (where each offer stopped and why, with counters and technical codes; for a fare or time rejection, which side of your limit and a rough band of the distance to it, never the fare or the limit; no addresses, names, fares or phone numbers).</li>
+<li>A structure of the screen with personal data removed, in three cases: an offer that could not be read or accepted for a reason unrelated to your conditions; an offer Sabbaq did not read in full that you then accepted by hand; and one rejected offer a day per rejection kind (fare or time), with the fare and time as Sabbaq read them, to check the reading against the screen. In every case:
 <ul>
 <li>element types, positions and IDs;</li>
 <li>numbers, words the engine already knows and short button labels kept as text;</li>
@@ -144,6 +154,7 @@
 <li>at most 20 a day per device, rejected by the server if unsafe.</li>
 </ul></li>
 </ul>
+<p><strong>Rooted phones:</strong> on a rooted phone Sabbaq asks once for root access through your root manager; if you allow it, it taps accept with a touch written directly to the touch screen. Nothing of this is sent to us, and you can revoke it at any time.</p>
 <p><strong>Engine learning:</strong> new words seen by at least three drivers are tested on phones read-only, without tapping; the phone reports only whether a word completed the offer.</p>
 <p><strong>Location:</strong> only with destination zones on.</p>
 <ul>
@@ -159,12 +170,13 @@
 <li>The app downloads your country's default exclude zones and zone limit; the country comes from your registered phone number's prefix.</li>
 </ul>
 <p><strong>Device health and crashes:</strong> the phone maker, Android version, memory size, battery and standby restrictions, when and why Android ended the app, update state, and the crash type and location in Sabbaq's code (no text or personal data). The detailed crash report stays on the device unless you share it.</p>
+<p><strong>Instant notifications:</strong> the app gets a notification token for your phone from Google Firebase Cloud Messaging and stores it on our server with your account (at most 5 phones). When the administration sends a message or your subscription changes, our server sends your phone an empty signal through Google, with no text or data about you, and the phone then fetches what is new from our server. The token is deleted with your account, or when Google rejects it after the app is removed. Setup and start reminders are worked out on the phone and send nothing.</p>
 <p><strong>Referrals:</strong> the owner of the invite code you used sees your name, phone number and subscription state. Device and phone number are recorded against reward fraud.</p>
 <p><strong>Updates and floating button:</strong> the direct build downloads updates from our server and verifies their hash and signature; Android installs them only with your approval. The floating button starts, stops and opens Sabbaq; it reads and sends nothing.</p>
-<p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server), Twilio (SMS codes), OpenStreetMap Nominatim and Overpass (address, zone, route and city names), Photon by komoot (place search and address lookup). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
+<p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server, Firebase Cloud Messaging for content-free wake-ups), Twilio (SMS codes), OpenStreetMap Nominatim and Overpass (address, zone, route and city names), Photon by komoot (place search and address lookup). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
 <p><strong>Retention:</strong></p>
 <ul>
-<li>Account data: until you delete the account.</li>
+<li>Account data and the notification token: until you delete the account; the log of sent wake-ups, 7 days.</li>
 <li>Diagnostics and screen structures: 30 days (structures adopted for the engine contain no personal data).</li>
 <li>Shared address and place cache: not linked to accounts (Google places 30 days).</li>
 <li>Audit log: de-identified, 12 months.</li>
