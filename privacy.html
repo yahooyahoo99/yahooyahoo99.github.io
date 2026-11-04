@@ -95,6 +95,7 @@
 
 <h2>الرسائل والإشعارات</h2>
 <p>نحفظ رسائلك مع الدعم والإشعارات المرسلة إليك، لعرضها في التطبيق وللرد عليك.</p>
+<p><strong>الصور والرسائل الصوتية في الدعم:</strong> يمكنك أن ترفق برسالة الدعم صورة أو رسالة صوتية، ويمكن للإدارة أن ترد بمثلها. تُختار الصورة بأداة اختيار الصور في Android دون منح التطبيق إذنًا لصورك. يُطلب إذن الميكروفون فقط حين تضغط زر التسجيل أول مرة، ولا يُستعمل إلا أثناء تسجيلك رسالة صوتية (دقيقتان على الأكثر) ويتوقف فور خروجك من الصفحة؛ لا يستمع سبّاق في أي وقت آخر، ويعمل التطبيق كاملًا إن رفضت الإذن. تُحفظ الصور والتسجيلات في مساحة خاصة لا يصل إليها إلا أنت والإدارة المخوّلة بالدعم. ونحفظ أيضًا تفاعلك على الرسائل (رمز تعبيري) ووقت فتح كل طرف للمحادثة لعرض علامة «مقروءة».</p>
 <p><strong>الإشعار الفوري:</strong> يحصل التطبيق من خدمة Firebase Cloud Messaging من Google على رمز إشعار خاص بهاتفك، ويحفظه في خادمنا مرتبطًا بحسابك (5 هواتف على الأكثر). عند وصول رسالة من الإدارة أو تغيّر في اشتراكك، يرسل خادمنا عبر Google إشارة فارغة إلى هاتفك، لا تحمل أي نص أو بيانات عنك، فيجلب الهاتف الجديد من خادمنا مباشرة. يُحذف الرمز مع حذف حسابك، أو حين يرفضه Google بعد إزالة التطبيق.</p>
 <p><strong>التذكيرات:</strong> تذكيرات إكمال الإعداد وتشغيل سبّاق تُحسب على هاتفك من حالته، ولا تُرسل شيئًا.</p>
 
@@ -119,7 +120,7 @@
 
 <h2>مدة الاحتفاظ</h2>
 <ul>
-<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل ورمز الإشعار وطلبات الدفع وصور الإيصالات:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب. وسجل الإشعارات الفورية المرسلة يُحذف بعد 7 أيام.</li>
+<li><strong>الحساب والاشتراك ومعرّف الجهاز والرسائل وصور الدعم ورسائله الصوتية ورمز الإشعار وطلبات الدفع وصور الإيصالات:</strong> طوال بقاء حسابك، وتُحذف فور طلبك حذف الحساب. وسجل الإشعارات الفورية المرسلة يُحذف بعد 7 أيام.</li>
 <li><strong>أحداث التشخيص وصحة الجهاز:</strong> 30 يومًا، ثم تُحذف تلقائيًا.</li>
 <li><strong>هياكل الشاشات بعد حذف بياناتها الشخصية:</strong> 30 يومًا، ثم تُحذف تلقائيًا، إلا ما اعتُمد منها لتحسين المحرك (ولا يحمل أي بيانات شخصية).</li>
 <li><strong>ذاكرة العناوين والأماكن المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا (أماكن Google بعد 30 يومًا).</li>
@@ -172,12 +173,13 @@
 </ul>
 <p><strong>Device health and crashes:</strong> the phone maker, Android version, memory size, battery and standby restrictions, when and why Android ended the app, update state, and the crash type and location in Sabbaq's code (no text or personal data). The detailed crash report stays on the device unless you share it.</p>
 <p><strong>Instant notifications:</strong> the app gets a notification token for your phone from Google Firebase Cloud Messaging and stores it on our server with your account (at most 5 phones). When the administration sends a message or your subscription changes, our server sends your phone an empty signal through Google, with no text or data about you, and the phone then fetches what is new from our server. The token is deleted with your account, or when Google rejects it after the app is removed. Setup and start reminders are worked out on the phone and send nothing.</p>
+<p><strong>Photos and voice messages in support:</strong> you can attach a photo or a voice message to a support message, and the administration can reply with one. Photos are picked with Android's photo picker (no access to your photos). The microphone permission is asked only when you first tap the record button and is used only while you record a voice message (at most two minutes), stopping as soon as you leave the page; Sabbaq never listens at any other time, and the app works fully if you refuse. Photos and recordings are kept in private storage that only you and the authorised support administration can open. Your reactions on messages (an emoji) and when each side opened the conversation (for the «read» mark) are stored too.</p>
 <p><strong>Referrals:</strong> the owner of the invite code you used sees your name, phone number and subscription state. Device and phone number are recorded against reward fraud.</p>
 <p><strong>Updates and floating button:</strong> the direct build downloads updates from our server and verifies their hash and signature; Android installs them only with your approval. The floating button starts, stops and opens Sabbaq; it reads and sends nothing.</p>
 <p><strong>Processors:</strong> Supabase (hosting, database, authentication), Google (sign-in, address lookup via our server, Firebase Cloud Messaging for content-free wake-ups), Twilio (SMS codes), OpenStreetMap Nominatim and Overpass (address, zone, route and city names), Photon by komoot (place search and address lookup). No ads, no third-party analytics, no sale of data. Data travels over HTTPS only.</p>
 <p><strong>Retention:</strong></p>
 <ul>
-<li>Account data, the notification token, payment requests and receipt photos: until you delete the account; the log of sent wake-ups, 7 days.</li>
+<li>Account data, support photos and voice messages, the notification token, payment requests and receipt photos: until you delete the account; the log of sent wake-ups, 7 days.</li>
 <li>Diagnostics and screen structures: 30 days (structures adopted for the engine contain no personal data).</li>
 <li>Shared address and place cache: not linked to accounts (Google places 30 days).</li>
 <li>Audit log: de-identified, 12 months.</li>
