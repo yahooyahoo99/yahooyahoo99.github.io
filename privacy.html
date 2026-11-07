@@ -44,6 +44,7 @@
 <li>يحمل نوع كل عنصر وموقعه ومعرّفه.</li>
 <li>يبقى منه نصًا كما هو: الأرقام، والكلمات التي يعرفها المحرك (مثل «قبول» و«دقائق» و«ريال»)، وأسماء الأزرار القصيرة.</li>
 <li>تتحول أي كلمة أخرى، مثل عنوان أو اسم، إلى رمز شكلي لا يُقرأ: «حي النرجس» تصبح «اا ااااا».</li>
+<li>استثناء ليتعلم المحرك الكلمات الجديدة، في عيّنة طلب لم يُقرأ كاملًا فقط: يبقى نص الزر في أسفل شاشة الطلب، أو الكلمة المجهولة الوحيدة الملاصقة لرقم مثل «5 دقيقتين». وقد تكون هذه الكلمة أحيانًا جزءًا من عنوان، مثل «شارع 15».</li>
 <li>تُخفى كل الأرقام إذا وُجدت في النص الواحد سبعة أرقام أو أكثر.</li>
 <li>تُحذف عناوين البريد والروابط.</li>
 <li>يرفض الخادم أي عيّنة تخالف هذه القواعد.</li>
@@ -154,6 +155,7 @@
 <li>element types, positions and IDs;</li>
 <li>numbers, words the engine already knows and short button labels kept as text;</li>
 <li>every other word turned into an unreadable shape token;</li>
+<li>so the engine can learn new words, on a sample of an offer that was not fully read only: the button label at the bottom of the offer screen, or the one unknown word touching a number such as «5 minz», which can occasionally be part of an address such as «Street 15»;</li>
 <li>all digits masked when a text holds seven or more;</li>
 <li>e-mails and links dropped;</li>
 <li>at most 20 a day per device, rejected by the server if unsafe.</li>
