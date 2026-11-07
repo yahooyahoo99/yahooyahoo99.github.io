@@ -13,7 +13,7 @@
 <main>
 <header class="hero"><a class="hero-brand" href="./"><img src="logo.svg" alt="" width="52" height="52"><span><strong>سبّاق</strong><small>أول من يلتقط الطلب المناسب · Sabbaq</small></span></a></header>
 <h1>سياسة خصوصية تطبيق سبّاق</h1>
-<p class="meta">تاريخ السريان: 2026-11-03 · المسؤول عن البيانات: إدارة سبّاق · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
+<p class="meta">تاريخ السريان: 2026-11-07 · المسؤول عن البيانات: إدارة سبّاق · التواصل: <a href="mailto:info@kassab.de">info@kassab.de</a></p>
 
 <p>تشرح هذه السياسة كيف يعالج تطبيق «سبّاق» لنظام Android (الحزمة <code>app.sabbaq.driver</code>) بيانات مستخدميه، ولماذا، وإلى متى. لا تنطبق على سياسات خصوصية تطبيقات الرحلات (مثل جيني وبولت وبترا) التي يقرأ سبّاق شاشاتها بإذنك.</p>
 
@@ -21,6 +21,7 @@
 <ul>
 <li><strong>بيانات الحساب:</strong> عند الدخول بحساب Google: البريد الإلكتروني والاسم ومعرّف حساب Google. عند الدخول برقم الجوال: رقم الجوال السعودي الذي تتحقق منه برمز لمرة واحدة.</li>
 <li><strong>معرّف الجهاز:</strong> معرّف Android الخاص بالتطبيق (ANDROID_ID)، لربط الاشتراك بجهاز واحد ومنع تكرار التجربة المجانية.</li>
+<li><strong>بصمة عتاد الجهاز:</strong> يقرأ التطبيق معرّف DRM (Widevine) الخاص بجوالك، ويحسب منه على جهازك بصمة تشفير أحادية الاتجاه (SHA-256)، ويرسل البصمة وحدها إلى خادمنا عند الدخول وعند بدء التجربة ومرة في كل تشغيل. لا يخرج المعرّف نفسه من جوالك، ولا تتيح البصمة استرجاعه، ولا نشاركها مع أحد. نستخدمها لمنح تجربة مجانية واحدة لكل جوال، ومنع الاحتيال في مكافآت الدعوات، وتنفيذ حظر الإدارة. الجوال الذي لا يوفر هذا المعرّف لا تُرسل منه بصمة.</li>
 <li><strong>حالة الاشتراك:</strong> حالة التجربة أو الاشتراك وتواريخ بدئه وانتهائه، ورقم إصدار التطبيق، وأكواد التفعيل التي تستخدمها.</li>
 <li><strong>طلبات الدفع بالتحويل:</strong> إن اشتركت بتحويل بنكي نحفظ الخطة التي اخترتها ومبلغها ورقم مرجع التحويل الذي ترسله، وصورة الإيصال إن أرفقتها. تُختار الصورة بأداة اختيار الصور في Android دون منح التطبيق إذنًا لصورك، وتُحفظ في مساحة خاصة لا يصل إليها إلا أنت والإدارة المخوّلة لمراجعة الحوالة. لا نطلب بيانات بطاقتك أو حسابك البنكي، فالتحويل يتم من تطبيق بنكك. وإن ضغطت «تفعيل عبر واتساب» يُفتح واتساب برسالة فيها رقمك المسجّل، ولا تُرسل إلا إذا أرسلتها أنت.</li>
 <li><strong>شروطك وتفضيلاتك:</strong> شروط الطلبات (الأجرة والوقت والمسافة والكلمات والمناطق) ومظهر التطبيق، وتُحفظ على جهازك. يُرسل إلى خادمنا فقط أيّ الشروط مفعّل (نعم أو لا لكل شرط)، دون قيمها، كل 6 ساعات وعند الحفظ، لتشخيص سبب عدم القبول دون الرجوع إليك.</li>
@@ -126,7 +127,8 @@
 <li><strong>هياكل الشاشات بعد حذف بياناتها الشخصية:</strong> 30 يومًا، ثم تُحذف تلقائيًا، إلا ما اعتُمد منها لتحسين المحرك (ولا يحمل أي بيانات شخصية).</li>
 <li><strong>ذاكرة العناوين والأماكن المشتركة:</strong> لا ترتبط بأي حساب، وتُحذف دوريًا (أماكن Google بعد 30 يومًا).</li>
 <li><strong>سجل التدقيق الأمني:</strong> يُجرَّد من هوية حسابك عند الحذف، ويُحتفظ به 12 شهرًا ثم يُحذف.</li>
-<li><strong>بصمات منع تكرار التجربة المجانية:</strong> إذا استخدمت التجربة قبل الحذف، نحتفظ ببصمات تشفير أحادية الاتجاه (SHA-256) لرقم جوالك أو بريد Google ومعرّف جهازك فقط، طوال تشغيل الخدمة. لا تتيح هذه البصمات استرجاع البيانات الأصلية.</li>
+<li><strong>بصمات منع تكرار التجربة المجانية:</strong> إذا استخدمت التجربة قبل الحذف، نحتفظ ببصمات تشفير أحادية الاتجاه (SHA-256) لرقم جوالك أو بريد Google ومعرّف جهازك وعتاد جوالك فقط، طوال تشغيل الخدمة. لا تتيح هذه البصمات استرجاع البيانات الأصلية.</li>
+<li><strong>بصمات الحظر:</strong> إذا حظرت الإدارة شخصًا لمخالفة، نحتفظ ببصمات تشفير أحادية الاتجاه لبريده أو جواله الموثّقين ولأجهزته وعتادها، حتى بعد حذف الحساب، إلى أن يُرفع الحظر. وأي حساب يدخل بإحدى هذه البصمات يُرفض ما دام الحظر قائمًا.</li>
 <li><strong>النسخ الاحتياطية:</strong> تُستبدل لدى مزود الاستضافة دوريًا خلال 7 أيام.</li>
 </ul>
 
@@ -143,7 +145,7 @@
 <h2 lang="en" dir="ltr">Privacy Policy (English)</h2>
 <div lang="en" dir="ltr">
 <p>Effective 2026-11-03. Controller: Sabbaq management (إدارة سبّاق), <a href="mailto:info@kassab.de">info@kassab.de</a>. App: Sabbaq for Android (<code>app.sabbaq.driver</code>).</p>
-<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; subscription state and dates; app version; activation codes. If you subscribe by bank transfer: the plan, its amount, the transfer reference you send and, if you attach it, a photo of the receipt, picked with Android's photo picker (no access to your photos) and kept in private storage that only you and the authorised administration can open; we never ask for card or bank account details, the transfer is made in your bank's app. «Activate via WhatsApp» opens WhatsApp with a message carrying your registered number, sent only if you send it. Your conditions and preferences stay on the device; only which conditions are on (yes or no each, never their values) is sent every 6 hours and on save, to diagnose missed offers without asking you.</p>
+<p><strong>Account:</strong> Google email, name and ID, or a verified Saudi phone number; the app-scoped Android ID; a one-way SHA-256 digest of the phone's Widevine DRM ID, computed on the phone and sent at sign-in, when starting a trial and once per launch (the ID itself never leaves the phone, the digest is shared with no one, it serves to give one free trial per phone, stop referral fraud and enforce administration blocks, and a phone without this ID sends none); subscription state and dates; app version; activation codes. If you subscribe by bank transfer: the plan, its amount, the transfer reference you send and, if you attach it, a photo of the receipt, picked with Android's photo picker (no access to your photos) and kept in private storage that only you and the authorised administration can open; we never ask for card or bank account details, the transfer is made in your bank's app. «Activate via WhatsApp» opens WhatsApp with a message carrying your registered number, sent only if you send it. Your conditions and preferences stay on the device; only which conditions are on (yes or no each, never their values) is sent every 6 hours and on save, to diagnose missed offers without asking you.</p>
 <p><strong>Screen reading (Accessibility service):</strong> Sabbaq reads only the window of the ride app you chose. On your device it extracts the fare, time, distance and destination, applies your conditions, and taps accept when they are met. Screen content is not uploaded, except:</p>
 <ul>
 <li>Short diagnostic events (where each offer stopped and why, with counters and technical codes; for a fare or time rejection, which side of your limit and a rough band of the distance to it, never the fare or the limit; no addresses, names, fares or phone numbers).</li>
@@ -184,7 +186,8 @@
 <li>Diagnostics and screen structures: 30 days (structures adopted for the engine contain no personal data).</li>
 <li>Shared address and place cache: not linked to accounts (Google places 30 days).</li>
 <li>Audit log: de-identified, 12 months.</li>
-<li>One-way trial fingerprints: while the service runs.</li>
+<li>One-way trial fingerprints, including the hardware digest: while the service runs.</li>
+<li>One-way digests of a person blocked by the administration (verified email or phone, devices and their hardware): kept after account deletion until the block is lifted; any account presenting one is refused while the block stands.</li>
 <li>Backups: 7 days.</li>
 </ul>
 <p><strong>Your rights:</strong> delete your account in the app (Account → Delete account) or via <a href="delete-account.html">the deletion page</a>. Turn off accessibility, location or the floating button in Android settings at any time. The app is for adult drivers.</p>
