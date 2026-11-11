@@ -37,6 +37,13 @@
 .play .tri { flex: none; width: 34px; height: 34px; border-radius: 10px; background: var(--soft); display: grid; place-items: center; }
 .play strong { display: block; font-size: 16px; }
 .badge { margin-inline-start: auto; flex: none; font-size: 13px; font-weight: 800; color: var(--on-signature); background: var(--signature); border-radius: 999px; padding: 2px 10px; }
+.community-head { display: flex; align-items: center; gap: 12px; }
+.community-head strong { display: block; font-size: 18px; }
+.community-head > span:last-child { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.wa { flex: none; width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; color: var(--on-signature); background: var(--signature); }
+.join { display: block; text-align: center; margin: 14px 0 2px; padding: 14px 16px; border-radius: 14px; font-size: 18px; font-weight: 800;
+  text-decoration: none; color: var(--on-signature); background: var(--signature); }
+.join:active { transform: scale(.98); }
 .steps { list-style: none; padding: 0; margin: 14px 0; counter-reset: step; }
 .steps > li { counter-increment: step; display: flex; gap: 14px; align-items: center; background: var(--card); border: 1px solid var(--line); border-bottom: 2px solid var(--line-bottom);
   border-radius: 18px; padding: 14px; margin: 12px 0; }
@@ -82,6 +89,14 @@ details > div { padding: 0 16px 12px; }
 <span><strong>قريبًا على Google Play</strong>إلى أن يصل، هذه الصفحة هي المصدر الرسمي الوحيد لسبّاق.</span>
 <span class="badge">قريبًا</span>
 </div>
+</section>
+
+<section class="card community" aria-label="مجتمع سبّاق">
+<div class="community-head">
+<span class="wa" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.9s.8 2.2.9 2.4c.1.1 1.6 2.5 4 3.5 1.5.6 2.1.7 2.8.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.4Z"/></svg></span>
+<span><strong>مجتمع سبّاق على واتساب</strong>تحديثات التطبيق، وشروحات قصيرة، ونقاش مع السائقين.</span>
+</div>
+<a class="join" href="https://chat.whatsapp.com/LIlvbLi1yEFBcF2oqnDK1f" target="_blank" rel="noopener">انضم إلى المجتمع</a>
 </section>
 
 <h2>خطوات التثبيت</h2>
